@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-gray-50 text-gray-900;
+    line-height: 1.6;
+  }
+}
+
+@layer components {
+  .px-5\% {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  
+  .max-w-1200 {
+    max-width: 1200px;
+  }
+  
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .animation-delay-200 {
+    animation-delay: 200ms;
+  }
+  
+  .service-features li::before {
+    content: "\f00c";
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    left: 0;
+    color: #19b5fe;
+    font-weight: 900;
+  }
+}
+
+@layer utilities {
+  .backdrop-saturate-150 {
+    backdrop-filter: saturate(150%);
+  }
+}
